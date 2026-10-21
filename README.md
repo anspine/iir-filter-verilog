@@ -123,6 +123,10 @@ the output stabilises at 0
 
 ** we round off values here because the output is in the form of digital signals
 
+## 4. Future Prospects
+
+The IIR filter can be improved by implementing higher-precision fixed-point arithmetic and testing different coefficients to achieve various frequency responses. Future extensions could include real-time signal processing, adjustable cutoff frequencies, and FPGA-based implementation. An analog-to-digital conversion (ADC) interface could also be added to process real-world analog signals, along with a dedicated testing port to monitor input and output signals during hardware verification. These improvements could enable practical applications such as noise reduction and sensor signal conditioning.
+
 
 
 
