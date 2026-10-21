@@ -94,7 +94,10 @@ The Logic 8 analyzer was used to capture and verify
 the hardware output.
 D0-D3 → input(LSB to MSB)
 D4-D7 → output(LSB to MSB)
+
 ![logic8_iir]
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/1d0292a4-e363-498d-adc2-72f1cdc2e1de" />
+
 
 Initially, y(n-1)=0. The clock pulse is triggered
 
@@ -119,6 +122,8 @@ y(n-1) = 1
 
 y(n) = (6(0) + 2(1))/8 =0.25 ~ 0
 
+
+<img width="1512" height="982" alt="Screenshot 2026-10-19 at 10 41 11 PM" src="https://github.com/user-attachments/assets/899f1b98-4491-42ab-9f09-1c2a5b096d0e" />
 the output stabilises at 0
 
 ** we round off values here because the output is in the form of digital signals
