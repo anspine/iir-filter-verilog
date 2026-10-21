@@ -1,0 +1,47 @@
+module tb_baugh_wooley;
+
+    reg signed [3:0] A;
+    reg signed [3:0] B;
+    wire signed [7:0] P;
+
+    // Connect the multiplier
+    baugh_wooley uut (
+        .A(A),
+        .B(B),
+        .P(P)
+    );
+
+    initial begin
+        // Print signal values whenever they change
+        $monitor("Time=%0t ns | A=%0d | B=%0d | P=%0d | P(binary)=%b",
+                 $time, A, B, P, P);
+
+        // Initialize inputs
+        A = 4'sd0;
+        B = 4'sd0;
+        #10;
+
+        // Test 1: 4 * 6 = 24
+        A = 4'sd4;
+        B = 4'sd6;
+        #10;
+
+        // Test 2: 2 * 6 = 12
+        A = 4'sd2;
+        B = 4'sd6;
+        #10;
+
+        // Test 3: -1 * 2 = -2
+        A = -4'sd1;
+        B = 4'sd2;
+        #10;
+
+        // Test 4: -4 * 3 = -12
+        A = -4'sd4;
+        B = 4'sd3;
+        #10;
+
+        $finish;
+    end
+
+endmodule
