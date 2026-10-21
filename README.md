@@ -78,5 +78,18 @@ The testbench applies input values and reset signals to the filter and checks it
 
 ### Testbench Verification
 
+#### Simulation Results
+
 A Verilog testbench was used to simulate the IIR filter and the Baugh wooley multiplier by applying input samples and observing the corresponding output values. The simulation verifies that the filter correctly performs the required calculations using the chosen coefficients and previous output values. The resulting waveforms were examined to confirm the expected filter response.
+![iir filter simulation](<img width="1920" height="1080" alt="iir filter simulation" src="https://github.com/user-attachments/assets/63a5d603-4ee8-439e-ada1-1227c7554e1f" />)
+![baugh wooley simulation](<img width="1920" height="1080" alt="baugh wooley simulation" src="https://github.com/user-attachments/assets/ea19b70d-72f1-4b3b-b3ac-ec5f479dc616" />)
+
+#### Hardware Verification
+
+The Logic 8 analyzer was used to capture and verify
+the hardware output.
+![logic8_iir](<img width="1512" height="982" alt="logic8_iir" src="https://github.com/user-attachments/assets/5316bb60-66cd-4169-b7bb-ba568af34139" />)
+
+
+
 
