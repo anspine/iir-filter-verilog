@@ -92,6 +92,8 @@ A Verilog testbench was used to simulate the IIR filter and the Baugh wooley mul
 
 The Logic 8 analyzer was used to capture and verify
 the hardware output.
+D0-D3 → input(LSB to MSB)
+D4-D7 → output(LSB to MSB)
 ![logic8_iir]
 
 Initially, y(n-1)=0. The clock pulse is triggered
