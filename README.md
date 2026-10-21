@@ -93,7 +93,54 @@ A Verilog testbench was used to simulate the IIR filter and the Baugh wooley mul
 The Logic 8 analyzer was used to capture and verify
 the hardware output.
 ![logic8_iir]
+
+Initially, y(n-1)=0. The clock pulse is triggered
+
+At x (n) = 4,ie, 0100
+Y(n)= (6(4) + 0)/8 =3
+
+then,
+y(n-1) = 3
+y(n) = (6(4) + 2(3))/8 =3.75 ~ 4
+
 <img width="1512" height="982" alt="logic8_iir" src="https://github.com/user-attachments/assets/5316bb60-66cd-4169-b7bb-ba568af34139" />
+the output stabilises at 4
+
+further, the input is brought down to 0
+x(n) = 0
+y(n-1) = 4
+
+y(n) = ((6(0) + 2(4))/8 =1 
+
+then, 
+y(n-1) = 1
+
+y(n) = (6(0) + 2(1))/8 =0.25 ~ 0
+
+the output stabilises at 0
+
+** we round off values here because the output is in the form of digital signals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
